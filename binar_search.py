@@ -15,11 +15,11 @@ print(ele)
 
 low = 0
 high = len(ele)-1
-
+gate = True
 if y < ele[0] or y>ele[high]:
-    return 0 
+    gate = False 
 
-while low <= high:
+while low <= high and gate:
   mid = int((low+high)/2)
   print("hi1y")
   if ele[mid]>y:
